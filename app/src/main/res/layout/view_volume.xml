@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300px"
+    android:layout_height="200px"
+    android:orientation="vertical" 
+    
+    android:background="@drawable/volume_bg">
+
+    <ImageView
+        android:id="@+id/view_volume_image"
+        android:layout_width="100px"
+        android:layout_height="96px"
+        android:layout_gravity="center"
+        android:layout_margin="15px"
+        android:src="@drawable/volume_image_unmute" />
+    
+    <SeekBar
+            android:id="@+id/view_volume_SeekBar"
+            android:paddingTop="20px"
+            android:max="31"
+            android:progress="15"
+            android:thumbOffset="2px"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="260px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            />
+
+</LinearLayout>
